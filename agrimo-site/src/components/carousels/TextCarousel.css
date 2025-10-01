@@ -1,0 +1,34 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  background: #F8F7F0; /* adjust to your background */
+  white-space: nowrap;
+  padding: 1rem 0;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 5rem;
+  font-weight: bold;
+  color: transparent; 
+  -webkit-text-stroke: 1px grey;
+}
+
+.star-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  /* filter: brightness(0) saturate(100%) invert(40%) sepia(10%) saturate(500%) hue-rotate(60deg) brightness(95%); */
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

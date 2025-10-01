@@ -2,6 +2,10 @@ import React from 'react'
 import './About.css'
 import WhoWeAreImage from './../assets/images/Background.png'
 import LeafIcon from './../assets/images/leaf-icon.png'
+import FeatureCard from './cards/FeatureCard'
+import EquipmentIcon from './../assets/images/equipment-icon.png'
+import FenceIcon from './../assets/images/fence-icon.png'
+
 
 const About = () => {
   return (
@@ -28,11 +32,34 @@ const About = () => {
             </div>
 
             <div className='who-we-are-main-text'>
-              <h1>
+              <p>
                 Currently we are growing <br/>
                 and selling organic food
-              </h1>
+              </p>
             </div>
+
+            <div className='who-we-are-sub-text'>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br></br> Maiores quidem maxime modi in doloribus voluptatem quam beatae <br></br>tempore accusantium est!  Vitae laboriosam dolore, sequi facere<br></br> autem odit tenetur sed eveniet?
+              </p>
+            </div>
+
+            <div className='card-container'>
+              <FeatureCard 
+                icon={<img src={FenceIcon}/>}
+              title="Eco Farms Worldwide"
+              description="There are many variations of passages of lorem ipsum available majority have suffered."
+              />
+
+              <FeatureCard 
+                icon={<img src={EquipmentIcon}/>}
+              title="Special Equipment"
+              description="There are many variations of passages of lorem ipsum available majority have suffered."
+              />
+              
+            </div>
+
+              
           </div>
         </div>
 

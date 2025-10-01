@@ -3,6 +3,7 @@ import NavHero from './HomeComponents/NavHero'
 // import Hero from "../components/Hero";
 import FeatureCards from "../components/FeatureCards";
 import About from "../components/About";
+import TextCarousel from '../components/carousels/TextCarousel';
 import Services from "../components/Services";
 import ChoosePerfect from "../components/ChoosePerfect";
 import Gallery from "../components/Gallery";
@@ -22,6 +23,7 @@ function Home() {
       {/* <Hero /> */}
       <FeatureCards />
       <About />
+      <TextCarousel />
       <Services />
       <ChoosePerfect />
       <Gallery />
