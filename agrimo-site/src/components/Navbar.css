@@ -1,0 +1,183 @@
+
+
+.NavbarContainer {
+  font-family: 'Signika', sans-serif;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background: transparent; /* change to white if needed */
+  position: absolute; /* stays on top of hero image */
+  top: 0;
+  left: 0;
+  gap : 60px;
+  z-index: 1000;
+  font-size: small;
+}
+
+.navbar-left{
+  margin : 2%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.AgrimoLogo {
+  height: 50px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.navbar-left .nav-links {
+  font-family: 'Signika', sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+.nav-links .nav-link {
+  font-family: 'Signika', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  color: white; /* change to dark if background is white */
+  transition: color 0.3s ease;
+}
+
+.nav-links li {
+  font-family: 'Signika', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+
+.nav-links .nav-link:hover,
+.nav-links .active {
+  font-family: 'Signika', sans-serif;
+  color: #EDDD5E; /* highlight color (sunset orange) */
+}
+
+.navbar-right .navbar-btn {
+  font-family: 'Signika', sans-serif;
+  padding: 10px 20px;
+  background: #EDDD5E;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navbar-right .navbar-btn:hover {
+  background: #d98c00;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 2%;
+}
+
+.phone-icon {
+  margin-right: 8px;
+  display: flex;
+  /* align-items: center; */
+}
+
+.contact-details {
+  color: white;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.search-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.search-icon-svg {
+  stroke:#EDDD5E;        
+  width : 50%; 
+  transition: stroke background-color 0.3s ease;
+}
+
+.search-icon-svg:hover {
+  stroke: orange;       
+  /* background-color: #d98c00; */
+  cursor: pointer;
+}
+
+.navbar-right-first {
+  display: flex;
+  gap : 2px;
+}
+
+
+.navbar-btn {
+  display : flex;
+  align-items: center;
+  color : #404A3D;
+}
+
+/* Dropdown  */
+.dropdown-parent {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-down {
+  margin-left: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 180px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(32,44,55,0.18);
+  border-radius: 12px;
+  padding: 16px 0;
+  z-index: 1500;
+  transition: opacity 0.2s, visibility 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dropdown-parent:hover .dropdown-menu,
+.dropdown-parent:focus-within .dropdown-menu {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown-menu a {
+  color: #202c36;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 24px;
+  transition: background 0.2s;
+  border: none;
+  background: none;
+}
+
+.dropdown-menu a:hover {
+  /* background: #fcf7e6; */
+  color:#5B8C51;
+  border-radius: 7px;
+}
+
+

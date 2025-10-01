@@ -1,0 +1,77 @@
+
+.believe-in-quality-container p {
+  display : inline-block;
+  font-family: 'Signika', sans-serif;
+  font-size: 0.7em;
+  font-weight: 50;
+  color: white;
+  margin : 0;
+  padding : 7px 30px;
+  border-radius: 30px;
+  background-color : none;
+  border : 1px solid white;
+
+}
+
+
+
+.hero-main-text {
+  font-family: 'Signika', sans-serif;
+  font-size: 5rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;
+}
+
+.hero-sub-text {
+  /* font-size: 20rem; */
+  /* font-weight: 600; */
+  color: white;
+  /* margin-top: 20px; */
+}
+
+.hero-line-container hr{
+  /* height : 0.5px; */
+  /* border: 1px solid white; */
+  /* width: 50px; */
+  margin-left: 0;
+  width : 90%;
+  opacity : 0.4;
+  /* margin-top: 20px; */
+}
+
+.hero-sub-text p{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: light;
+  font-variation-settings:
+    "width" 100;
+}
+
+.hero-btn-container{
+  margin-top: 20px;
+  display : flex;
+  /* align-items : flex-start; */
+}
+
+.hero-btn {
+  font-family: 'Signika', sans-serif;
+  font-weight : 100;
+  font-size: 0.8em;
+  display : flex;
+  align-items :center;
+  border-radius: 30px;
+  border : none;
+  padding: 5px 30px;
+  transition : background-color color 0.7s ease-in-out;
+}
+
+.hero-btn:hover{
+  background-color: gold;
+  color : white;
+}
+
+
+
+

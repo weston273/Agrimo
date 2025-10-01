@@ -1,0 +1,30 @@
+.NavHeroContainer {
+  position: relative;
+  width: 100%;       /* take full width of parent */
+  height: 750px;
+  overflow: hidden;  /* prevent horizontal scroll if image is larger */
+  background: url('./../../assets/images/background-image.png') no-repeat center center;
+  border-radius: 2%;
+  margin : 1%;
+}
+
+.HeroContainer {
+  margin-left : 18%;
+  position: absolute;
+  top: 30%;
+  /* left: 50%; */
+  /*transform: translate(-50%, -50%); /*perfectly centered */
+  /* text-align: left; */
+  /* color: white; makes text visible */
+  
+}
+
+
+/* .HeroContainer { */
+  /* position: absolute; */
+  /* bottom: 30px;   distance from bottom */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  /* text-align: center; */
+  /* color: white; */
+/* } */
