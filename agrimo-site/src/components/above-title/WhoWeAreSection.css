@@ -1,0 +1,29 @@
+.who-we-are-container-second {
+  display: block;
+}
+
+.who-we-are-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 1em;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 0.5px 30px;
+}
+
+.leaf-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.who-we-are-header-text p {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.who-we-are-content {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
