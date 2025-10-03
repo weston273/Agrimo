@@ -1,0 +1,50 @@
+.servicesSection {
+  /* margin-left: 20%; */
+  display: block;
+  justify-content: left;
+  align-items: center;  
+  padding: 20px;
+  background-color: #5B8C51;
+  background-image: url('../assets/images/grain-pattern.png');
+  background-repeat: repeat-x;              /* Repeat horizontally only */
+  background-position: bottom center;       /* Position at bottom center */
+  background-size: auto;                     
+
+}
+
+.services-header-icon{
+    margin-left : 18%;
+    margin-right: 18%;
+}
+
+.services-header-text{
+    margin-left : 18%;
+    margin-right: 18%;
+    display: flex;
+    color : white;
+    justify-content: space-between;
+    margin-right: 8.2%;
+    font-family: 'Signika', sans-serif;
+    /* background-color: grey; */
+}
+
+.services-header-text p{
+    font-size: 1.7em;
+    margin-top: 3%;
+}
+
+.services-header-btns{
+    display: flex;
+    align-items: center;
+    gap : 0.2em;
+}
+
+.services-cards-container{
+    margin-left : 18%;
+    margin-right: 18%;
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+    margin-bottom : 10%;
+}
+

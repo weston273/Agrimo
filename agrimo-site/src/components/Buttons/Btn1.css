@@ -1,0 +1,9 @@
+.Btn1{
+    background-color:#5B8C51;
+    border : 1px solid white;
+    display:flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+}
+

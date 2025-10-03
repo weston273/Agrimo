@@ -1,0 +1,13 @@
+.CardTitleContainer {
+  display: flex;
+  align-items: center;   /* bullet + text same line */
+  gap: 8px;              /* space between bullet + text */
+}
+
+.CardTitleContainer p {
+  margin: 0;             /* remove default <p> spacing */
+  font-size: 1rem;
+  /* font-weight: 600; */
+  font-family: 'Signika',sans-serif;
+  color: #333333;
+}

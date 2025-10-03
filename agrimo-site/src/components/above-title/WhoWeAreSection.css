@@ -12,14 +12,16 @@
 }
 
 .leaf-icon {
-  width: 28px;
-  height: 28px;
+  width: 15px;
+  height: 15px;
 }
 
 .who-we-are-header-text p {
+  font-family: 'Signika', sans-serif;
   margin: 0;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #333;
 }
 
 .who-we-are-content {
