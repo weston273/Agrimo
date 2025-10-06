@@ -1,4 +1,6 @@
 .carousel-container {
+  /* font-family: 'Signika', sans-serif; */
+  margin:1%;
   width: 100%;
   overflow: hidden;
   background: #F8F7F0; /* adjust to your background */

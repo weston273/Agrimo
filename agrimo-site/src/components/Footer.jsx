@@ -1,9 +1,84 @@
-import React from 'react'
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="footer">
+      {/* Top bar */}
+      <div className="footer-top">
+        <nav className="footer-menu">
+          <a href="#">Farmers</a>
+          <a href="#">Organic</a>
+          <a href="#">Foods</a>
+          <a href="#">Product</a>
+        </nav>
+        <div className="footer-contact">
+          <div className="contact-item">
+            <img src="/assets/images/phone-icon.png" alt="Phone" />
+            <span>+1 (212) 555-5111</span>
+          </div>
+          <div className="contact-item">
+            <img src="/assets/images/email-icon.png" alt="Email" />
+            <span>noreply@grimofoods.com</span>
+          </div>
+        </div>
+      </div>
 
-export default Footer
+      {/* Bottom section */}
+      <div className="footer-main">
+        <div className="footer-left">
+          <img
+            src="/assets/images/logo.png"
+            alt="Grimo Logo"
+            className="footer-logo"
+          />
+          <p>
+            Mauris sed molestie sem. Sed vel vestibulum elit, non accumsan risus.
+            In vitae sapien viverra est iaculis lacinia mauris.
+          </p>
+          <div className="footer-social">
+            <img src="/assets/images/fb-icon.png" alt="Facebook" />
+            <img src="/assets/images/tw-icon.png" alt="Twitter" />
+            <img src="/assets/images/ig-icon.png" alt="Instagram" />
+          </div>
+        </div>
+
+        <div className="footer-center">
+          <h4>Useful Link</h4>
+          <ul>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div className="footer-center">
+          <h4>Working Time</h4>
+          <ul>
+            <li>Mon - Fri: 9.00am - 5.00pm</li>
+            <li>Saturday: 10.00am - 6.00pm</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+
+        <div className="footer-right">
+          <h4>Our Address</h4>
+          <p>
+            Old Westbury 256, New York<br />
+            11201, United States
+          </p>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="footer-bottom">
+        <div className="footer-links">
+          <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
+        </div>
+        <p>Copyright © 2024 Grimo. All Rights Reserved.</p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
