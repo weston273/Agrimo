@@ -4,7 +4,7 @@ import ServiceCard from "../components/cards/ServiceCard";
 import "./OurServices.css";
 
 import serviceImg1 from "./../assets/services/harvest.jpg";
-import serviceImg2 from "../assets/services/farming.jpg";
+import serviceImg2 from "./../assets/images/farmer.jpg";
 import serviceImg3 from "../assets/services/soil.jpg";
 import serviceImg4 from "../assets/services/vegetables.jpg";
 import serviceImg5 from "../assets/services/dairy.jpg";
