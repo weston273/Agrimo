@@ -1,0 +1,52 @@
+.hero-ourhistory {
+  background: url('./../../assets/images/farmer.jpg') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+/* Dark overlay for text readability */
+.hero-ourhistory::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-overlay {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-overlay h1 {
+  font-size: 52px;
+  margin: 0;
+}
+
+.hero-overlay p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-ourhistory {
+    height: 250px;
+    padding: 0 20px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 32px;
+  }
+
+  .hero-overlay p {
+    font-size: 14px;
+  }
+}

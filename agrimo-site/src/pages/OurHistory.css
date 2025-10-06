@@ -1,0 +1,28 @@
+.hero-section {
+  background: url('/images/history-hero.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero-text p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-section {
+    height: 200px;
+  }
+}
