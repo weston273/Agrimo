@@ -1,0 +1,51 @@
+.faq-item {
+  margin: 10px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  padding: 15px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #f7f7f7;
+  color: #333;
+  list-style: none;
+  position: relative;
+}
+
+.faq-item summary::marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "➕";
+  position: absolute;
+  right: 20px;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+  content: "➖";
+}
+
+.faq-item p {
+  padding: 15px 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  background: #fff;
+}
+
+.faq-item[open] summary {
+  background: #4b7f32;   /* green highlight */
+  color: #fff;           /* white text */
+}
+
+.faq-item[open] p {
+  background: #f9fff6;   /* subtle greenish background for answer */
+}

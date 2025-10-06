@@ -1,0 +1,42 @@
+.hero-faq {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: url("../../assets/images/faq-hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-faq .hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero-faq h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-faq p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .hero-faq {
+    height: 200px;
+    padding: 20px;
+  }
+
+  .hero-faq h1 {
+    font-size: 2rem;
+  }
+
+  .hero-faq p {
+    font-size: 1rem;
+  }
+}
