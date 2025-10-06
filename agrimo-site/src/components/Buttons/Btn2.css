@@ -1,0 +1,10 @@
+.Btn2{
+    background-color:#F8F7F0;
+    /* background-color: grey; */
+    border : 1px solid black;
+    display:flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+}
+

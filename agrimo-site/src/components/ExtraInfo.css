@@ -1,0 +1,39 @@
+.ExtraInfoContainer{
+    background-image: url('./../assets/images/Background.png');
+    background-repeat: no-repeat;
+    margin: 1%;
+    margin-left: 18%;
+    margin-right: 18%;
+    display: flex;
+    font-family:'Signiko',sans-serif;
+    
+}
+
+.extra-info-above-container{
+    background-color: rgb(255, 217, 0);
+    width: 50%;
+    margin-left: 50%;
+    border-radius: 10px;
+}
+
+.extra-info-above-title{
+    margin : 10%;
+    margin-bottom: 1%;
+}
+
+.extra-info-header-text{
+    font-size: 1.5em;
+    margin: 10%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color: #333333;
+}
+
+.extra-info-paragraph-text {
+    font-size : 1.5em;
+    margin: 1%;
+    margin-left: 10%;
+    color: #333333;
+    font-size: 0.5em;
+    font-weight:lighter;
+}

@@ -1,0 +1,35 @@
+.choosePerfectSection{
+    font-family: 'Signiko', sans-serif;
+    margin-top : 1%;
+    margin-bottom: 1%;
+    margin-left : 18%;
+    margin-right : 18%;
+    display: block;
+    align-items: center;
+}
+
+.choose-perfect-header-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-perfect-header-text-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content : center;
+    color : #333333;
+    font-size : 2.5em;
+}
+
+.choose-perfect-all-sections{
+    display: flex;
+    align-items: center;
+    
+}
+
+.choose-perfect-icons-text-container{
+    display: block;
+    
+}

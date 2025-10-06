@@ -44,3 +44,9 @@
     color: #333;
 }
 
+.card-container{
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+}
+

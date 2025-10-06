@@ -1,30 +1,98 @@
+/* ========================
+   Base Layout (Your Original Structure)
+======================== */
 .NavHeroContainer {
   position: relative;
-  width: 100%;       /* take full width of parent */
+  width: 100%;            /* take full width of parent */
   height: 750px;
-  overflow: hidden;  /* prevent horizontal scroll if image is larger */
-  background: url('./../../assets/images/background-image.png') no-repeat center center;
+  overflow: hidden;        /* prevent horizontal scroll if image is larger */
+  background: url('./../../assets/images/background-image.png') no-repeat center center / cover;
   border-radius: 2%;
-  margin : 1%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: fadeInBg 1.8s ease-in-out;
 }
 
+.NavbarSpan {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  animation: slideDown 1.2s ease-out;
+}
+
+/* Hero content alignment (your original margin and alignment preserved) */
 .HeroContainer {
-  margin-left : 18%;
+  margin-left: 18%;
   position: absolute;
   top: 30%;
-  /* left: 50%; */
-  /*transform: translate(-50%, -50%); /*perfectly centered */
-  /* text-align: left; */
-  /* color: white; makes text visible */
-  
+  z-index: 5;
+  animation: fadeUp 1.4s ease-out;
 }
 
+/* ========================
+   Animations
+======================== */
+@keyframes fadeInBg {
+  from { opacity: 0; transform: scale(1.02); }
+  to { opacity: 1; transform: scale(1); }
+}
 
-/* .HeroContainer { */
-  /* position: absolute; */
-  /* bottom: 30px;   distance from bottom */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
-  /* text-align: center; */
-  /* color: white; */
-/* } */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================
+   Responsiveness
+======================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .HeroContainer {
+    top: 35%;
+    margin-left: 10%;
+  }
+}
+
+/* Mobile landscape & portrait */
+@media (max-width: 768px) {
+  .NavHeroContainer {
+    height: auto;
+    padding: 20% 5% 10%;
+    background-position: center;
+    background-attachment: scroll; /* disable parallax for mobile performance */
+    border-radius: 10px;
+  }
+
+  .HeroContainer {
+    position: relative;
+    top: auto;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 15%;
+    animation: fadeUp 1.2s ease-out;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .NavHeroContainer {
+    border-radius: 0;
+    padding: 25% 4% 12%;
+    height: auto;
+  }
+
+  .HeroContainer {
+    margin-top: 20%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+ 

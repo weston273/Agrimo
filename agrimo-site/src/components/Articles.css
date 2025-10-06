@@ -1,0 +1,27 @@
+.ArticlesSection{
+    /* margin-left: 1% 18%; */
+    font-family: 'Signiko', sans-serif;
+    display: block;
+}
+
+.articles-above-title{
+    display: flex;
+    margin-left:18%;
+}
+
+.articles-header-text-btns{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.articles-header-text{
+    font-size: 1.8em;
+}
+
+.articles-left-right-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}

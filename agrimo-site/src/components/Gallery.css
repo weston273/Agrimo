@@ -1,0 +1,34 @@
+.GallerySection{
+    display: flex;
+    margin : 1%;
+    width : 100%;
+    height: 100%;
+}
+
+
+
+.gallery-left-image{
+    width : 90%;
+    height: 90%;
+}
+
+.gallery-left-image img{
+    width: 90%;
+    height : 80%;
+}
+
+.gallery-middle-images{
+    display: flex;
+     width : 100%;
+    height: 100%;
+}
+
+.gallery-middle-images img{
+    width: 100%;
+    height : 100%;
+}
+
+.gallery-right-image{
+    width : 90%;
+    height: 80%;
+}

@@ -1,14 +1,16 @@
 .who-we-are-container-second {
   display: block;
+  margin-top: 10%;
 }
 
 .who-we-are-header {
   display: inline-flex;
   align-items: center;
-  gap: 1em;
+  justify-content: flex-start;
+  gap: 0.5em;
   background-color: #fff;
   border-radius: 30px;
-  padding: 0.5px 30px;
+  /* padding: 0.1px 30px; */
 }
 
 .leaf-icon {

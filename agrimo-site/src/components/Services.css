@@ -1,31 +1,29 @@
 .servicesSection {
-  /* margin-left: 20%; */
   display: block;
   justify-content: left;
   align-items: center;  
   padding: 20px;
   background-color: #5B8C51;
   background-image: url('../assets/images/grain-pattern.png');
-  background-repeat: repeat-x;              /* Repeat horizontally only */
-  background-position: bottom center;       /* Position at bottom center */
+  background-repeat: repeat-x;              
+  background-position: bottom center;       
   background-size: auto;                     
-
 }
 
+/* header */
 .services-header-icon{
-    margin-left : 18%;
+    margin-left: 18%;
     margin-right: 18%;
 }
 
 .services-header-text{
-    margin-left : 18%;
+    margin-left: 18%;
     margin-right: 18%;
     display: flex;
-    color : white;
+    color: white;
     justify-content: space-between;
     margin-right: 8.2%;
     font-family: 'Signika', sans-serif;
-    /* background-color: grey; */
 }
 
 .services-header-text p{
@@ -36,15 +34,112 @@
 .services-header-btns{
     display: flex;
     align-items: center;
-    gap : 0.2em;
+    gap: 0.2em;
 }
 
+/* cards */
 .services-cards-container{
-    margin-left : 18%;
+    margin-left: 18%;
     margin-right: 18%;
     display: flex;
     gap: 2em;
     justify-content: space-around;
-    margin-bottom : 10%;
+    margin-bottom: 10%;
 }
 
+/* ---------------------- */
+/* ✅ Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .services-cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-header-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .services-header-text p {
+    font-size: 1.3em;
+    margin-top: 0;
+  }
+
+  .services-header-btns {
+    justify-content: flex-start;
+  }
+
+  .services-cards-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .services-card {
+    width: 100%;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-header-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-header-btns {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .services-cards-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .services-card {
+    max-width: 320px;
+  }
+}
+
+/* ---------------------- */
+/* ✅ Subtle Animations */
+
+/* fade-slide entry */
+.servicesSection {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* card hover grow */
+.services-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* button hover */
+.services-header-btns button {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.services-header-btns button:hover {
+  transform: scale(1.05);
+  background-color: rgba(255,255,255,0.1);
+}
