@@ -22,7 +22,7 @@ const GlobalMarket = () => {
           <button className="global-market__button">
             Discover More
             <span className="global-market__button-icon">
-              <BtnArrowIcon direction="right" size={16} color="black" />
+              <BtnArrowIcon direction="left" size={16} color="black" />
             </span>
           </button>
         </div>
