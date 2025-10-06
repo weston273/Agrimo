@@ -44,15 +44,15 @@
 .article-card-meta {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 5px;
   font-size: 0.75rem;
   color: #555;
   padding-left: 4px;
 }
 
 .article-card-meta img {
-  width: 14px;
-  margin-right: 4px;
+  width: 12px;
+  margin-right: 3px;
 }
 
 .article-card-title {
