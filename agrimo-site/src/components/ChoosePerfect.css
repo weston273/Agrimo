@@ -1,35 +1,132 @@
-.choosePerfectSection{
-    font-family: 'Signiko', sans-serif;
-    margin-top : 1%;
-    margin-bottom: 1%;
-    margin-left : 18%;
-    margin-right : 18%;
-    display: block;
-    align-items: center;
+.choosePerfectSection {
+  font-family: 'Signiko', sans-serif;
+  margin: 3% 18%;
+  display: block;
+  align-items: center;
 }
 
-.choose-perfect-header-icon-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Header Icon */
+.choose-perfect-header-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.choose-perfect-header-text-container{
-    display: flex;
+/* Header Text */
+.choose-perfect-header-text-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #333333;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+/* Main Flex Layout */
+.choose-perfect-all-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Each left/right group of icons + text */
+.choose-perfect-icons-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+/* Center image */
+.choose-perfect-middle-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-perfect-middle-image img {
+  width: 80%;
+  max-width: 350px;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.choose-perfect-middle-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ================================= */
+/* 🌐 RESPONSIVENESS */
+/* ================================= */
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .choosePerfectSection {
+    margin: 4% 10%;
+  }
+
+  .choose-perfect-header-text-container {
+    font-size: 2em;
+  }
+
+  .choose-perfect-all-sections {
+    gap: 20px;
+  }
+
+  .choose-perfect-middle-image img {
+    width: 70%;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .choosePerfectSection {
+    margin: 5% 6%;
+  }
+
+  .choose-perfect-header-text-container {
+    font-size: 1.8em;
+  }
+
+  .choose-perfect-all-sections {
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content : center;
-    color : #333333;
-    font-size : 2.5em;
-}
+  }
 
-.choose-perfect-all-sections{
-    display: flex;
+  .choose-perfect-icons-text-container {
     align-items: center;
-    
+    justify-content: center;
+    width: 100%;
+  }
+
+  .choose-perfect-middle-image {
+    order: -1; /* optional: bring image to top */
+    margin-bottom: 30px;
+  }
+
+  .choose-perfect-middle-image img {
+    width: 60%;
+    max-width: 280px;
+  }
 }
 
-.choose-perfect-icons-text-container{
-    display: block;
-    
+/* Extra small screens */
+@media (max-width: 480px) {
+  .choose-perfect-header-text-container {
+    font-size: 1.5em;
+  }
+
+  .choose-perfect-middle-image img {
+    width: 80%;
+  }
+
+  .choose-perfect-icons-text-container {
+    gap: 20px;
+  }
 }

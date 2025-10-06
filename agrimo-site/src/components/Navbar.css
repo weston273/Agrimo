@@ -410,4 +410,123 @@
   }
 }
 
+/* --- MOBILE RESPONSIVENESS (FIXED) --- */
+@media (max-width: 900px) {
+  .NavbarContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; /* slightly smaller for mobile */
+    padding: 0 20px;
+    margin-top: 0;
+    background: rgba(32, 44, 55, 0.95); /* add subtle background for readability */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+  }
+
+  .AgrimoLogo {
+    height: 45px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    height: 22px;
+    width: 28px;
+    z-index: 1100;
+  }
+
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  .menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Fix nav links layout */
+  .nav-links {
+    position: fixed;
+    top: 70px; /* aligns right below navbar */
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: rgba(32, 44, 55, 0.97);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 28px;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links .nav-link {
+    color: #EDDD5E;
+    font-size: 1.1rem;
+  }
+
+  .nav-links li {
+    flex-direction: column;
+  }
+
+  /* Disable dropdowns on mobile (hover doesn’t make sense here) */
+  .dropdown-menu {
+    display: none !important;
+  }
+
+  /* Hide right side on mobile */
+  .navbar-right {
+    display: none;
+  }
+}
+
+/* For extra small devices */
+@media (max-width: 480px) {
+  .NavbarContainer {
+    height: 65px;
+    padding: 0 15px;
+  }
+
+  .nav-links {
+    top: 65px;
+    height: calc(100vh - 65px);
+  }
+
+  .AgrimoLogo {
+    height: 40px;
+  }
+}
+
+
 
