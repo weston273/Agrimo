@@ -16,8 +16,16 @@ const FeatureCard = ({ icon, title, description }) => {
       </svg>
 
       <div className="feature-card-content">
-        <div className="feature-card-icon">{icon}</div>
-        <h3 className="feature-card-title">{title}</h3>
+        <div className='feature-card-title-icon'>
+          <div className="feature-card-icon">
+            <img src={icon} alt={`${icon} image`} />  
+          </div>
+          {/* card title */}
+          <div className="feature-card-text">
+            <h3 className="feature-card-title">{title}</h3>
+          </div>
+        </div>
+        
         <p className="feature-card-description">{description}</p>
       </div>
     </div>
