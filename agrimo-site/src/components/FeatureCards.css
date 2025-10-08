@@ -7,7 +7,7 @@
 }
 
 .card-content {
-  margin : 5%;
+  margin : 5% 5%;
   width: 100%;
   display: block;
   /* flex-direction:column; */
@@ -19,19 +19,19 @@
 }
 
 .card-header{
-    display: flex;
-    gap : 1em;
-    align-items: center;
-    /* background-color: #EDDD5E; */
-    /* display:block; */
-    padding: 20px;
-    border-radius: 50%;
+  display: flex;
+  gap : 1em;
+  align-items: center;
+  /* background-color: #EDDD5E; */
+  /* display:block; */
+  padding: 20px;
+  border-radius: 50%;
 }
 
 .card-icon {
-    background-color: #EDDD5E;
-    border-radius: 50%;
-    padding: 15px;
+  background-color: #EDDD5E;
+  border-radius: 50%;
+  padding: 15px;
 }
 
 .card-text p{
