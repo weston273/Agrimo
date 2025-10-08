@@ -1,5 +1,3 @@
-
-
 .NavbarContainer {
   font-family: 'Signika', sans-serif;
   width: 100%;
@@ -39,6 +37,7 @@
 
 
 .nav-links .nav-link {
+  
   font-family: 'Signika', sans-serif;
   cursor: pointer;
   font-weight: 500;
@@ -57,6 +56,15 @@
 .nav-links .active {
   font-family: 'Signika', sans-serif;
   color: #EDDD5E; /* highlight color (sunset orange) */
+}
+
+.nav-link a{
+  text-decoration: none;
+  font-family: 'Signika', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  color: white; /* change to dark if background is white */
+  transition: color 0.3s ease;
 }
 
 .navbar-right .navbar-btn {
@@ -80,6 +88,19 @@
   align-items: center;
   gap: 10px;
   margin-right: 2%;
+}
+
+.navbar-right-second {
+  margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  /* margin-right: 20px; */
+}
+.white-svg-container{
+  position: absolute;
+
 }
 
 .phone-icon {
@@ -125,6 +146,68 @@
   align-items: center;
   color : #404A3D;
 }
+
+.navbar-right-second {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F7F0; /* matches navbar background tone */
+  padding: 8px 12px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.get-in-touch-btn {
+  background-color: #EDDD5E;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #404A3D;
+  font-family: 'Signika', sans-serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.get-in-touch-btn:hover {
+  transform: translateY(-2px);
+  background-color: #e3cd4e;
+}
+
+
+
+/* Corner SVGs */
+.corner-svg {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+}
+
+.corner-svg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.corner-svg.top-left {
+  top: -6px;
+  left: -8px;
+}
+
+.corner-svg.bottom-right {
+  bottom: -6px;
+  right: -8px;
+  transform: rotate(180deg);
+}
+
 
 /* Dropdown  */
 .dropdown-parent {
@@ -178,6 +261,13 @@
   /* background: #fcf7e6; */
   color:#5B8C51;
   border-radius: 7px;
+}
+
+
+.get-in-touch-btn{
+  background-color:#F8F7F0;
+  padding: 5%;
+  border-radius: 10%;
 }
 
 /* Responsive Design */

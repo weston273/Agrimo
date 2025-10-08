@@ -35,7 +35,7 @@ const Navbar = () => {
               <ArrowIcon direction="down" color="#202c36" width={16} height={16} />
             </span>
             <div className="dropdown-menu">
-              <a href="#">Home1</a>
+              <a href="/">Home1</a>
               <a href="#">Home2</a>
               <a href="#">Home3</a>
             </div>
@@ -55,13 +55,20 @@ const Navbar = () => {
           </li>
           <li><EllipseBullet /></li>
 
-          <li className="nav-link">SERVICES</li>
+          <li className="nav-link">
+            <a href='/services'>SERVICES</a></li>
           <li><EllipseBullet /></li>
-          <li className="nav-link">PORTFOLIO</li>
+          <li className="nav-link">
+            <a href="/portfolio">PORTFOLIO</a>
+          </li>
           <li><EllipseBullet /></li>
-          <li className="nav-link">BLOG</li>
+          <li className="nav-link">
+            <a href="/BLOG">BLOG</a>
+          </li>
           <li><EllipseBullet /></li>
-          <li className="nav-link">CONTACT US</li>
+          <li className="nav-link">
+            <a href="/contact">CONTACT US</a>
+          </li>
         </ul>
       </div>
 
@@ -78,12 +85,30 @@ const Navbar = () => {
           </span>
         </div>
 
-        <div className="get-in-touch">
-          <button className="navbar-btn">
-            <span>GET IN TOUCH</span>
-            <ArrowIcon direction="top-left" color="#404A3D" width={30} height={30} />
-          </button>
-        </div>
+
+<div className="navbar-right-second">
+  {/* Top-left white corner */}
+  {/* <div className="corner-svg top-left"> */}
+    {/* <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"> */}
+      {/* <path d="M30.6602 0H0.660156C16.6602 0 30.6602 14 30.6602 30V0Z" fill="#F8F7F0" /> */}
+    {/* </svg> */}
+  {/* </div> */}
+
+  {/* Button */}
+  <button className="navbar-btn get-in-touch-btn">
+    <span>Get In Touch</span>
+    <ArrowIcon direction="top-left" color="#404A3D" width={20} height={20} />
+  </button>
+
+  {/* Bottom-right white corner (rotated) */}
+  {/* <div className="corner-svg bottom-right"> */}
+    {/* <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"> */}
+      {/* <path d="M30.6602 0H0.660156C16.6602 0 30.6602 14 30.6602 30V0Z" fill="#F8F7F0" /> */}
+    {/* </svg> */}
+  {/* </div> */}
+</div>
+
+      
       </div>
     </header>
   );

@@ -3,7 +3,7 @@
 ======================== */
 .NavHeroContainer {
   position: relative;
-  width: 100%;            /* take full width of parent */
+   width: 99%;           /* take full width of parent */
   height: 750px;
   overflow: hidden;        /* prevent horizontal scroll if image is larger */
   background: url('./../../assets/images/background-image.png') no-repeat center center / cover;
