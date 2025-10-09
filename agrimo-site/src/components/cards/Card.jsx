@@ -35,6 +35,13 @@ const Card = ({ cardImage=null, cardHeader = null,cardText = null }) => {
             {cardText}
           </p>
         </div>
+        {/* The cards */}
+        <div className="card-button-container">
+          {/* The button which goes somewhere */}
+          <a href='/' className='card-button' >
+            <ArrowIcon direction='top-left' />
+           </a>   
+        </div>
       </div>
     </>
   )
