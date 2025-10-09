@@ -13,6 +13,13 @@ function ServiceCard({ id, title, category, description, image }) {
           ✕
         </Link>
       </div>
+      <div className="service-card-button-container">
+              {/* The button which goes somewhere */}
+              <a href='/' className='service-card-button' aria-label={`Learn more about ${title}`}>
+                <ArrowIcon direction='top-left' />
+               </a>
+              
+            </div>
     </div>
   );
 }

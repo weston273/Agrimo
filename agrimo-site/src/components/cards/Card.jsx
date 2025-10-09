@@ -1,8 +1,9 @@
 import React from 'react'
 import './Card.css'
 import CardTitle from './CardTitle'
+import ArrowIcon from './../icons/ArrowIcon'
 
-const Card = ({ cardImage=null, cardHeader = null,cardTitleText='', cardText = null }) => {
+const Card = ({ cardImage=null, cardHeader = null,cardText = null }) => {
   return (
     <>
       <div
@@ -19,10 +20,7 @@ const Card = ({ cardImage=null, cardHeader = null,cardTitleText='', cardText = n
         <div className='card-image-container'>
           <img src={cardImage} alt={cardHeader || 'card-image'} />
         </div>
-          {/* The Title of the Card */}
-        <div className='card-title-container'>
-          <CardTitle cardTitleText={cardTitleText}/>
-        </div>
+              
         {/* The Header text of the card */}
         <div className='card-head-text-container'>
           <p>{cardHeader}</p>

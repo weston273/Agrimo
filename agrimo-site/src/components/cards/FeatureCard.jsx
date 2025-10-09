@@ -1,5 +1,6 @@
 import React from "react";
 import "./FeatureCard.css";
+import ArrowIcon from './../../components/icons/ArrowIcon'
 
 const FeatureCard = ({ icon, title, description }) => {
   return (
@@ -25,8 +26,24 @@ const FeatureCard = ({ icon, title, description }) => {
             <h3 className="feature-card-title">{title}</h3>
           </div>
         </div>
+
+        {/* The horizontal line between the card title and the card text */}
+        <div className="feature-card-separator">
+          <hr />
+        </div>
+        {/* The card text */}
+        <div>
+          <p className="feature-card-description">{description}</p>
+        </div>
         
-        <p className="feature-card-description">{description}</p>
+      </div>
+
+      <div className="feature-card-button-container">
+        {/* The button which goes somewhere */}
+        <a href='/' className='feature-card-button' aria-label={`Learn more about ${title}`}>
+          <ArrowIcon direction='top-left' />
+         </a>
+        
       </div>
     </div>
   );
