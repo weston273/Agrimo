@@ -1,7 +1,7 @@
 import React from 'react';
 import './GlobalMarket.css'; // Import CSS
 import HandIcon from './../assets/images/hand-icon.png';
-import GlobalBackground from './../assets/images/globalbackground.png';
+import GlobalBackground from './../assets/images/gb.png';
 import BtnArrowIcon from './../components/icons/BtnArrowIcon';
 
 const GlobalMarket = () => {
