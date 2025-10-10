@@ -5,6 +5,8 @@ import IconsText from './../components/IconsText/IconsText'
 import HandIcon from './../assets/images/hand-icon.png'
 import QualityIcon from './../assets/images/quality-icon.png'
 import Corn from './../assets/images/corn.png'
+import WheatIcon from './../assets/images/wheat-icon.png'
+import CarrotIcon from './../assets/images/carrot-icon.png'
 
 import './ChoosePerfect.css'
 
@@ -40,7 +42,7 @@ const ChoosePerfect = () => {
           </div>
 
           <div className='choose-perfect-icons-text'>
-               <IconsText icon={QualityIcon} header='Agriculture Products' paragraph={<>
+               <IconsText icon={QualityIcon} header='Quality Products' paragraph={<>
                 Nullam stuff is stuff without <br />
                 other stuff- sensational.
               </>} />
@@ -56,7 +58,7 @@ const ChoosePerfect = () => {
           {/* Right Section */}
           <div className='choose-perfect-icons-text-container'>
     <div className='choose-perfect-icons-text'>
-            <IconsText icon={HandIcon} header='Agriculture Products' paragraph={<>
+            <IconsText icon={CarrotIcon} header='Fresh Vegetables' paragraph={<>
                 Nullam stuff is stuff without <br />
                 other stuff- sensational.
               </>} />
@@ -64,7 +66,7 @@ const ChoosePerfect = () => {
           </div>
 
           <div className='choose-perfect-icons-text'>
-               <IconsText icon={QualityIcon} header='Agriculture Products' paragraph={<>
+               <IconsText icon={WheatIcon} header='Pure & Organic' paragraph={<>
                 Nullam stuff is stuff without <br />
                 other stuff- sensational.
               </>} />
