@@ -79,6 +79,14 @@
   text-transform: uppercase;
 }
 
+.testimonials-cards-container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* Responsive */
 @media (max-width: 480px) {
   .testimonial-card {

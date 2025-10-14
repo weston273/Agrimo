@@ -4,7 +4,7 @@ import WhoWeAreSection from './../components/above-title/WhoWeAreSection';
 import LeafIcon from './../assets/images/leaf-icon.png';
 import Btn2 from './../components/Buttons/Btns2';
 import BtnArrowIcon from './../components/icons/BtnArrowIcon';
-import Card2 from './../components/cards/Card2';
+import Card3 from './../components/cards/Card3';
 
 const Testimonials = () => {
   return (
@@ -28,9 +28,22 @@ const Testimonials = () => {
 
         {/* Example Card Section */}
         <div className='testimonials-cards-container'>
-          <Card2 />
-          <Card2 />
-          <Card2 />
+          <Card3 
+          testimonial="I would recommend practitioners at 
+            this center to everyone! They are great
+            to work with and are excellent trainers.
+            Thank you all!" avatarName='Martin Bailey' avatarPosition='Supervisor'
+          />
+          <Card3
+            testimonial="I would recommend practitioners at 
+            this center to everyone! They are great
+            to work with and are excellent trainers.
+            Thank you all!" avatarName='Emma Greed' avatarPosition='Customer'
+          />
+          <Card3 testimonial="I would recommend practitioners at 
+            this center to everyone! They are great
+            to work with and are excellent trainers.
+            Thank you all!" avatarName='Daniel Craig' avatarPosition='Co Founder'/>
         </div>
       </section>
     </>

@@ -1,4 +1,5 @@
 .gallery-section {
+  margin-top : 5%;
   width: 100%;
   background-color: #faf8f0;
   overflow: hidden;
@@ -7,7 +8,6 @@
   perspective: 1000px;
 }
 
-/* Track for infinite scroll */
 .gallery-track {
   display: flex;
   width: calc(250px * 8);
@@ -15,34 +15,29 @@
   transform-style: preserve-3d;
 }
 
-/* Each image container */
 .gallery-item {
-  flex: 0 0 auto;
+  flex: 0 0 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
-/* Smaller images */
 .gallery-item img {
-  width: 180px;        /* Make images smaller */
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 20px;
   object-fit: cover;
-  opacity: 0.9;
-  transition: transform 0.6s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
-/* Hover zoom */
+/* Hover zoom effect */
 .gallery-item img:hover {
   transform: scale(1.1);
-  opacity: 1;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 2;
 }
 
-/* Infinite scroll animation */
+/* Infinite scroll */
 @keyframes scrollLeft {
   0% {
     transform: translateX(0);
@@ -52,7 +47,7 @@
   }
 }
 
-/* Gradient edges */
+/* Gradient fade on sides */
 .gallery-section::before,
 .gallery-section::after {
   content: "";
@@ -74,56 +69,7 @@
   background: linear-gradient(to left, rgba(250, 248, 240, 1), rgba(250, 248, 240, 0));
 }
 
-/* Depth effect - side items smaller */
-.gallery-item {
-  transform: scale(0.85);
-  opacity: 0.8;
-}
-
-/* Middle items appear larger */
-.gallery-item:nth-child(2),
-.gallery-item:nth-child(3),
-.gallery-item:nth-child(6),
-.gallery-item:nth-child(7) {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* Pause scrolling on hover */
+/* Pause on hover */
 .gallery-section:hover .gallery-track {
   animation-play-state: paused;
-}
-
-/* ========================== */
-/* 🌐 RESPONSIVE BEHAVIOR */
-/* ========================== */
-
-@media (max-width: 1200px) {
-  .gallery-item img {
-    width: 150px;
-    height: 150px;
-  }
-  .gallery-track {
-    animation-duration: 25s;
-  }
-}
-
-@media (max-width: 768px) {
-  .gallery-item img {
-    width: 120px;
-    height: 120px;
-  }
-  .gallery-track {
-    animation-duration: 22s;
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery-item img {
-    width: 100px;
-    height: 100px;
-  }
-  .gallery-track {
-    animation-duration: 20s;
-  }
 }
