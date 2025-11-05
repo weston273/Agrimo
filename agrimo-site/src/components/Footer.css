@@ -1,5 +1,5 @@
 .footer {
-    margin:1%  0;
+  margin:1%  0;
   font-family: "Poppins", sans-serif;
   background-color: #fff;
   color: #333;
@@ -9,6 +9,7 @@
 
 /* Top yellow bar */
 .footer-top {
+  margin: 0;
   background-color: #f2e77b;
   display: flex;
   justify-content: space-between;
@@ -17,8 +18,16 @@
   flex-wrap: wrap;
 }
 
+.footer-menu {
+  margin: 0 16%;  
+  /* padding: 0 10%; */
+   padding-top: 2%;
+   padding-bottom: 2%;
+}
+
 .footer-menu a {
   margin-right: 20px;
+ 
   color: #333;
   text-decoration: none;
   font-weight: 500;
@@ -49,7 +58,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap : 2%;
   padding: 50px 60px;
+  margin-top: 2%;
   flex-wrap: wrap;
   background-color: #fff;
 }
@@ -58,6 +69,7 @@
   flex: 1;
   min-width: 220px;
   margin-bottom: 20px;
+  margin-left: 16%;
 }
 
 .footer-logo {
@@ -71,10 +83,19 @@
   line-height: 1.6;
 }
 
+
+
 .footer-social img {
-  width: 24px;
+  background-color: #f5f5f5;
+  width: 15px;
   margin-right: 10px;
+  padding: 5%;
+  border-radius: 100%;
   cursor: pointer;
+}
+
+.facebook-icon img{
+  width : 8px;
 }
 
 .footer-center, .footer-right {

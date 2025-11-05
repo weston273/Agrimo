@@ -1,4 +1,9 @@
 import React from "react";
+import AltLogo from './../assets/images/alt-logo.png'
+import FacebookIcon from './../assets/images/facebook-logo.png'
+import XIcon from './../assets/images/x-icon.png'
+import LinkedInIcon from './../assets/images/linked-in-icon.png'
+import InstagramIcon from './../assets/images/instagram-icon.png'
 import "./Footer.css";
 
 const Footer = () => {
@@ -28,7 +33,7 @@ const Footer = () => {
       <div className="footer-main">
         <div className="footer-left">
           <img
-            src="/assets/images/logo.png"
+            src={AltLogo}
             alt="Grimo Logo"
             className="footer-logo"
           />
@@ -37,9 +42,10 @@ const Footer = () => {
             In vitae sapien viverra est iaculis lacinia mauris.
           </p>
           <div className="footer-social">
-            <img src="/assets/images/fb-icon.png" alt="Facebook" />
-            <img src="/assets/images/tw-icon.png" alt="Twitter" />
-            <img src="/assets/images/ig-icon.png" alt="Instagram" />
+            <img className='facebook-icon' src={FacebookIcon} alt="Facebook" />
+            <img src={XIcon} alt="Twitter" />
+            <img src={LinkedInIcon} alt="Instagram" />
+            <img src={InstagramIcon} alt="Instagram" />
           </div>
         </div>
 
